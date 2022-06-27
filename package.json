@@ -1,10 +1,10 @@
 {
-  "name": "@seansly/template-react-component-library",
+  "name": "@seansly/strapi-image-plugin",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple template for a custom React component library",
   "scripts": {
     "rollup": "rollup -c",
@@ -12,7 +12,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "author": "Alex Eagleson",
+  "author": "Sean Davis",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.5",
@@ -37,6 +37,7 @@
     "babel-jest": "^28.1.1",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "gatsby-plugin-image": "^2.17.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
@@ -51,10 +52,15 @@
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
     "typescript": "^4.4.4",
-    "webpack": "^5.73.0"
+    "webpack": "^5.73.0",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.4.0"
   },
   "peerDependencies": {
-    "react": "^18.x.x"
+    "react": "^18.x.x",
+    "gatsby-plugin-image": "^2.17.0",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.4.0"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -62,8 +68,5 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "dependencies": {
-    "react-dom": "^18.2.0",
-    "tslib": "^2.4.0"
-  }
+  "dependencies": {}
 }
